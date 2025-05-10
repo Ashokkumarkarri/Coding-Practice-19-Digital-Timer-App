@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Coding-Practice-19-Digital-Timer-App/static/css/main.97f0bba9.chunk.css",
-    "main.js": "/Coding-Practice-19-Digital-Timer-App/static/js/main.d3b32a16.chunk.js",
-    "main.js.map": "/Coding-Practice-19-Digital-Timer-App/static/js/main.d3b32a16.chunk.js.map",
+    "main.js": "/Coding-Practice-19-Digital-Timer-App/static/js/main.3618c03e.chunk.js",
+    "main.js.map": "/Coding-Practice-19-Digital-Timer-App/static/js/main.3618c03e.chunk.js.map",
     "runtime-main.js": "/Coding-Practice-19-Digital-Timer-App/static/js/runtime-main.2370a94f.js",
     "runtime-main.js.map": "/Coding-Practice-19-Digital-Timer-App/static/js/runtime-main.2370a94f.js.map",
     "static/js/2.5df2a54c.chunk.js": "/Coding-Practice-19-Digital-Timer-App/static/js/2.5df2a54c.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.2370a94f.js",
     "static/js/2.5df2a54c.chunk.js",
     "static/css/main.97f0bba9.chunk.css",
-    "static/js/main.d3b32a16.chunk.js"
+    "static/js/main.3618c03e.chunk.js"
   ]
 }
