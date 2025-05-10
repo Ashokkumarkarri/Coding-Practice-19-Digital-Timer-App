@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class DigitalTimer extends Component {
-  state = {totalSeconds: 1500, isRunning: false}
+  state = {totalSeconds: 1500, isRunning: false, limittxt: 25}
 
   componentDidMount() {
     const {isRunning} = this.state
@@ -21,15 +21,21 @@ class DigitalTimer extends Component {
 
   lessCount = () => {
     this.setState(prevState => {
-      const {totalSeconds} = this.state
-      return {totalSeconds: prevState.totalSeconds - 60}
+      const {totalSeconds, limittxt} = this.state
+      return {
+        totalSeconds: prevState.totalSeconds - 60,
+        limittxt: prevState.limittxt - 1,
+      }
     })
   }
 
   addCount = () => {
     this.setState(prevState => {
-      const {totalSeconds} = this.state
-      return {totalSeconds: prevState.totalSeconds + 60}
+      const {totalSeconds, limittxt} = this.state
+      return {
+        totalSeconds: prevState.totalSeconds + 60,
+        limittxt: prevState.limittxt + 1,
+      }
     })
   }
 
@@ -52,11 +58,11 @@ class DigitalTimer extends Component {
   }
 
   resetBtn = () => {
-    this.setState({totalSeconds: 1500})
+    this.setState({totalSeconds: 1500, limittxt: 25})
   }
 
   render() {
-    const {totalSeconds, isRunning} = this.state
+    const {totalSeconds, isRunning, limittxt} = this.state
     const min = Math.floor(totalSeconds / 60)
     const sec = totalSeconds % 60
     const format = num => num.toString().padStart(2, '0')
@@ -98,7 +104,7 @@ class DigitalTimer extends Component {
                 -
               </button>
               <div className="plus-minus">
-                <h1>25</h1>
+                <h1>{limittxt}</h1>
               </div>
               <button className="add-btn" type="button" onClick={this.addCount}>
                 +
