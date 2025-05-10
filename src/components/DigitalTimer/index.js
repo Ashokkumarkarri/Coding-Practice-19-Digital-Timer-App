@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class DigitalTimer extends Component {
-  state = {totalSeconds: 1500, isRunning: true}
+  state = {totalSeconds: 1500, isRunning: false}
 
   componentDidMount() {
     const {isRunning} = this.state
