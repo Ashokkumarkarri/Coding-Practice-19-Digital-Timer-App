@@ -1,0 +1,137 @@
+.bg-container {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+.content-div {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+.timer-card h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.timer-card p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.time-buttons-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.bg-btn-div {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-div:hover {
+  background-color: #555;
+}
+
+.btn-div img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-div h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.add-remov-btn-bg-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-remov-btn-bg-div h1 {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.plus-minus {
+  width: 80px;
+  height: 50px;
+  background-color: #00bcd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.time-content-div {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00d9f5;
+  background-color: white;
+  padding: 5px;
+}
+
+.add-btn {
+  font-size: 32px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 8px;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.2);
+}
+
+.start-txt {
+  color: white;
+}
